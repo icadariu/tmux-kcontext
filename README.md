@@ -18,14 +18,15 @@
 1. Functional shell script
 
 * Script can:
- * Fetch current kube context based on KUBECONFIG (or any other option)
- * Fetch current namespace
- * Doesn't error in case there is no context defined, but, maybe, throw error
- * Output context + namespace in colors (useful later in tmux)
-   ```console
-   # from kube-tmux
-   # [fg=blue]⎈ #[fg=colour]#[fg=]kind-kind#[fg=colour250]:#[fg=]default
-   ```
+  * Fetch current kube context based on KUBECONFIG (or any other option)
+  * Fetch current namespace
+  * Doesn't error in case there is no context defined, but, maybe, throw error
+  * Output context + namespace in colors (useful later in tmux)
+
+    ```console
+    # from kube-tmux
+    # [fg=blue]⎈ #[fg=colour]#[fg=]kind-kind#[fg=colour250]:#[fg=]default
+    ```
 
 * Tests:
   * Running multiple times gives the same result as long as `export KUBCONFIG` stays the same.
@@ -56,4 +57,3 @@
   * <https://github.com/thecasualcoder/kube-tmuxp>
   * <https://github.com/uesyn/tmux-kubecontext>
   * <https://github.com/kr3cj/tmux-kube>
-
